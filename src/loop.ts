@@ -38,7 +38,7 @@ export async function run(prompt: string) {
       break;
     }
 
-    const args = await fillArgs(prompt, tool, summary);
+    const args = await fillArgs(prompt, tool, summary, last);
     console.log(`      ${JSON.stringify(args)}`);
 
     let result: string;
